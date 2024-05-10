@@ -7,19 +7,25 @@
 @tailwind components;
 @tailwind utilities;
 
+.menu-mobile{
+    animation: rotateMenu 0.5s ease;
+}
+
+.menu-mobile-items-icones{
+    transition: all 5s ease-in-out;
+    animation: rotateMenuitems 1s ease;
+    
+   }
 .menu-mobile-items{
 
- transition: all 0.5s ease-in-out;
+ transition: all 0.9s ease-in-out;
+ animation: rotateMenuitems 1s ease;
 }
 
 .icone-menu-mobile-x{
     animation: rotateX 1s ease;
 }
 
-.icone-menu-mobile-menu{
-    animation: rotateMenu 1s ease;
-    
-}
 
 @keyframes rotateX{
     to{
@@ -33,11 +39,22 @@
 
 @keyframes rotateMenu {
     to{
-        transform: rotate(0deg);
+        transform: translateY(0);
 
     }
     from{
-        transform: rotate(10deg);
+        transform: translateY(100%);
+
+    }
+}
+
+@keyframes rotateMenuitems {
+    to{
+        transform: translateY(0);
+
+    }
+    from{
+        transform: translateY(400%);
 
     }
 }

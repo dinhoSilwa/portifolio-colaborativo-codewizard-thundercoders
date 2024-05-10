@@ -24,11 +24,11 @@ export default function Hero(){
   
         }
         <ul className={!isopen ? 'top-[110%] absolute hidden' : `menu-mobile w-screen bg-dark-color-second flex flex-col justify-start bottom-0 absolute left-0 h-[80%] rounded-2xl pt-10`}>
-          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><PiProjectorScreen />Sobre</a></li>
-          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><LiaPeopleCarrySolid /> Equipes</a></li>
-          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><BsUiChecksGrid /> Vantagens</a></li>
-          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" > <TbUsersGroup /> Participantes</a></li>
-          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><TbBrandLinkedin /> Linkedin</a></li>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className=" flex gap-2 items-center" ><PiProjectorScreen className="menu-mobile-items-icones" size={28} />Sobre</a></li>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className=" flex gap-2 items-center" ><LiaPeopleCarrySolid className="menu-mobile-items-icones" size={28} /> Equipes</a></li>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className=" flex gap-2 items-center" ><BsUiChecksGrid className="menu-mobile-items-icones" size={28} /> Vantagens</a></li>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className=" flex gap-2 items-center" > <TbUsersGroup className="menu-mobile-items-icones" size={28} /> Participantes</a></li>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className=" flex gap-2 items-center" ><TbBrandLinkedin className="menu-mobile-items-icones" size={28} /> Linkedin</a></li>
         
         </ul>
       </nav>
