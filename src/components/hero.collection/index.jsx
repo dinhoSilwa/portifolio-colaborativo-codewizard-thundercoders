@@ -4,7 +4,7 @@ import { BsGithub, BsUiChecksGrid } from "react-icons/bs"
 import { CgClose } from "react-icons/cg"
 import { DiReact } from "react-icons/di"
 import { LiaPeopleCarrySolid } from "react-icons/lia"
-import { PiProjectorScreen } from "react-icons/pi"
+import { PiGithubLogoThin, PiProjectorScreen } from "react-icons/pi"
 import { SiTailwindcss, SiTypescript, SiVite } from "react-icons/si"
 import { TbBrandLinkedin, TbUsersGroup } from "react-icons/tb"
 
@@ -16,19 +16,19 @@ export default function Hero(){
     <main className="flex flex-col border gap-[32px]">
       <nav className="flex justify-between px-4 h-32 items-center">
 
-        <button className="flex gap-2 items-center bg-primary-button px-6 rounded-[16px] py-4 w-28 text-base font-bold">
-          <BsGithub /><span>Github</span></button>
+        <a href={"https://github.com/Projeto-FrontEnd-Fusion"} target="_blank" className="px-4 flex gap-[6px] items-center justify-center bg-primary-button rounded-[16px] py-4 w-28 text-base font-bold">
+          <PiGithubLogoThin size={24} className="font-bold" /><p>Github</p></a>
         {
           !isopen ? <BiMenu size={40} color="white" onClick={()=>setisopen(!isopen)} className="icone-menu-mobile-menu"/>
          : <CgClose size={40} color="white" onClick={()=>setisopen(!isopen)} className="icone-menu-mobile-x"/>
   
         }
-        <ul className={!isopen ? 'top-[110%] absolute menu-mobile' : `menu-mobile w-screen bg-dark-color-second flex flex-col justify-start bottom-0 absolute left-0 h-[80%] rounded-2xl pt-10`}>
-          <li className=" w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><PiProjectorScreen />Sobre</a></li>
-          <li className=" w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><LiaPeopleCarrySolid /> Equipes</a></li>
-          <li className=" w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><BsUiChecksGrid /> Vantagens</a></li>
-          <li className=" w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" > <TbUsersGroup /> Participantes</a></li>
-          <li className=" w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><TbBrandLinkedin /> Linkedin</a></li>
+        <ul className={!isopen ? 'top-[110%] absolute hidden' : `menu-mobile w-screen bg-dark-color-second flex flex-col justify-start bottom-0 absolute left-0 h-[80%] rounded-2xl pt-10`}>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><PiProjectorScreen />Sobre</a></li>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><LiaPeopleCarrySolid /> Equipes</a></li>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><BsUiChecksGrid /> Vantagens</a></li>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" > <TbUsersGroup /> Participantes</a></li>
+          <li className=" menu-mobile-items w-full h-20 flex items-center px-6 rounded-sm text-[18px] font-second-title-font text-light-color hover:bg-dark-color "><a className="flex gap-2 items-center" ><TbBrandLinkedin /> Linkedin</a></li>
         
         </ul>
       </nav>
@@ -44,26 +44,26 @@ export default function Hero(){
         <DiReact size={40} color="white" /> <SiTypescript size={30} color="white" /> <SiVite size={30} color="white" /> <SiTailwindcss size={40} color="white" />
       </div>
     </article>
-      <section className="flex ml-auto mr-auto w-full  justify-center gap-[6px] items-center">
-        <figure className="flex flex-col h-72 w-20  items-center justify-center">
+      <section className="flex ml-auto mr-auto w-full  justify-center gap-[6px] items-center px-2">
+        <figure className="flex flex-col h-72 w-24  items-center justify-center">
            
-          <img src="https://i.imgur.com/ntcIrvR.png" width={96} className="rounded-xl" /> 
+          <img title="Dinho Silva" src="https://i.imgur.com/ntcIrvR.png" width={100} className="rounded-xl" /> 
+            
+        </figure>
+
+        <figure className="flex flex-col h-40 w-24  items-center justify-center mt-[-56px] gap-2">
+        <img title="Ana Carolina" src="https://i.imgur.com/VeJA1TV.png" width={100} className="rounded-xl" /> 
+        <img title="Rudinei" src="https://i.imgur.com/bZhbr5t.png" width={100} className="rounded-xl" /> 
 
         </figure>
 
-        <figure className="flex flex-col h-40 w-20  items-center justify-center mt-[-56px] gap-2">
-        <img src="https://i.imgur.com/VeJA1TV.png" width={96} className="rounded-xl" /> 
-        <img src="https://i.imgur.com/bZhbr5t.png" width={96} className="rounded-xl" /> 
-
+        <figure className="flex flex-col h-60 w-24  items-center justify-center  gap-2">
+        <img title="Ricardo" src="https://i.imgur.com/ovqtvHZ.png" width={100} className="rounded-xl" /> 
+        <img title="Odair" src="https://i.imgur.com/1f1GLxf.png" width={100} className="rounded-xl" /> 
         </figure>
 
-        <figure className="flex flex-col h-60 w-20  items-center justify-center  gap-2">
-        <img src="https://i.imgur.com/ovqtvHZ.png" width={96} className="rounded-xl" /> 
-        <img src="https://i.imgur.com/1f1GLxf.png" width={96} className="rounded-xl" /> 
-        </figure>
-
-        <figure className="flex flex-col h-72 w-20  items-center justify-center  gap-2">
-        <img src="https://i.imgur.com/9vBw1JC.png" width={96} className="rounded-xl" /> 
+        <figure className="flex flex-col h-72 w-24  items-center justify-center  gap-2">
+        <img title="Gleidson" src="https://i.imgur.com/9vBw1JC.png" width={100} className="rounded-xl" /> 
         </figure>
       </section>
     </main>
