@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu-mobile{
+
+ transition: all 0.5s ease-in-out;
+}
+
+.icone-menu-mobile-x{
+    animation: rotateX 1s ease;
+}
+
+.icone-menu-mobile-menu{
+    animation: rotateMenu 1s ease;
+    
+}
+
+@keyframes rotateX{
+    to{
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(-45deg);
+    }
+}
+
+
+@keyframes rotateMenu {
+    to{
+        transform: rotate(0deg);
+
+    }
+    from{
+        transform: rotate(10deg);
+
+    }
+}
